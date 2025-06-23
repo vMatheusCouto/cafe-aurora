@@ -11,7 +11,98 @@
 
 :root {
   font-size: 62.5%;
+  font-family: "Roboto Serif", serif;
+  line-height: 12.4rem;
 
-  --color-base-primary: #fff;
-  --color-base-secondary: #fff;
+  --color-beige: #EAD1B3;
+  --color-beige-light: #FFF8E8;
+  --color-terracota: #B3693F;
+  --color-terracota-yellow: #BE7532;
+  --color-coffee-milk: #8A6240;
+  --color-coffee-brown: #4D2D18;
+  --color-coffee-white: #FBEDDC;
+
+  color: var(--color-coffee-white);
+}
+
+body {
+  background-color: var(--color-beige);
+}
+
+header {
+  width: 100vw;
+  max-height: 10rem;
+  position: fixed;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 12.8rem;
+  font-weight: normal;
+}
+
+p {
+  font-size: 2.8rem;
+  line-height: 4rem;
+  font-weight: 200;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  width: 100%;
+}
+
+li {
+  font-family: "Poppins", sans-serif;
+  margin: auto;
+  font-size: 2.4rem;
+  font-weight: 250;
+  color: var(--color-coffee-brown);
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+button {
+  all: unset
+}
+
+object {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+main section {
+  height: 100vh;
+  width: 100vw;
+}
+
+#hero div {
+  max-width: 50%;
+}
+
+#hero {
+  background-color: var(--color-coffee-milk);
+  padding: 10rem;
+  padding-top: 20rem;
+}
+
+#user-experience {
+  background-color: var(--color-terracota);
+}
+
+#nav-list {
+  gap: 2rem
+}
+
+.nav-list-selected {
+  font-weight: bold;
+}
+
+.secondary {
+  color: var(--color-coffee-white);
 }
