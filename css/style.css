@@ -59,7 +59,7 @@ li {
   margin: auto;
   font-size: 2.4rem;
   font-weight: 250;
-  color: var(--color-coffee-brown);
+  color: var(--color-coffee-white);
 }
 
 li:hover {
@@ -107,6 +107,14 @@ a {
   font-weight: bold;
 }
 
-.secondary {
+.text-brown {
+  color: var(--color-coffee-brown);
+}
+
+.text-white {
   color: var(--color-coffee-white);
+}
+
+.text-terracota {
+  color: var(--color-terracota);
 }
