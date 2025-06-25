@@ -81,6 +81,10 @@ main section {
   width: 100vw;
 }
 
+a {
+  all: unset
+}
+
 #hero div {
   max-width: 50%;
 }
