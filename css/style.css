@@ -101,6 +101,20 @@ a {
   font-weight: bold;
 }
 
+.absolute-object {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.img-background {
+  width: 100vw;
+  max-height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  z-index: -2
+}
+
 .text-brown {
   color: var(--color-coffee-brown);
 }
@@ -111,10 +125,4 @@ a {
 
 .text-terracota {
   color: var(--color-terracota);
-}
-
-.absolute-object {
-  position: absolute;
-  right: 0;
-  top: 0;
 }

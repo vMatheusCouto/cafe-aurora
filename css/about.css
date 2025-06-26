@@ -1,11 +1,3 @@
-img {
-  width: 100vw;
-  max-height: 100vh;
-  object-fit: cover;
-  position: absolute;
-  z-index: -2
-}
-
 main section {
   display: flex;
   flex-direction: column;
