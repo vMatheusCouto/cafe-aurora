@@ -3,7 +3,7 @@ img {
   max-height: 100vh;
   object-fit: cover;
   position: absolute;
-  z-index: -1
+  z-index: -2
 }
 
 main section {
@@ -11,6 +11,23 @@ main section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+object {
+  height: 60%;
+  width: auto;
+}
+
+#hero-content {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-content div p {
+  max-width: 90%;
 }
 
 #about-hero div {
@@ -24,6 +41,7 @@ main section {
   display: flex;
   flex-direction: column;
   width: 50%;
+  gap: 2rem;
 }
 
 #about-where {
@@ -37,20 +55,33 @@ main section {
 
 #about-timeline {
   display: flex;
-  gap: 4rem;
+  gap: 8rem;
 }
 
-.title-lines {
+#title-lines {
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 
+#dark-mask {
+  position: absolute;
+  right: 0;
+  width: 60vw;
+  height: 100vh;
+  background-color: black;
+  z-index: -1;
+  -webkit-mask-image: linear-gradient(black, transparent);
+  mask-image: linear-gradient(to left, black, transparent);
+  opacity: 80%;
+}
+
 .vertical-line {
-  width: 100%;
+  width: 12%;
   height: 1rem;
-  background-color: var(--color-coffee-milk);
+  background-color: var(--color-terracota);
 }
 
 .timeline {
@@ -102,4 +133,8 @@ main section {
   height: 24rem;
   width: .6rem;
   z-index: -1;
+}
+
+.bg-brown {
+  background-color: var(--color-coffee-milk);
 }
