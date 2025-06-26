@@ -40,6 +40,14 @@ object {
  background-color: var(--color-coffee-milk);
 }
 
+#about-where div img {
+  height: 90%;
+  border-radius: 2rem;
+}
+
+#about-where p {
+}
+
 #about-where + section {
   justify-content: flex-start;
   padding-top: 10rem;
@@ -68,6 +76,21 @@ object {
   -webkit-mask-image: linear-gradient(black, transparent);
   mask-image: linear-gradient(to left, black, transparent);
   opacity: 80%;
+}
+
+#about-where div {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+#about-where div div {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  max-width: 40%;
 }
 
 .vertical-line {
@@ -110,6 +133,10 @@ object {
   justify-content: center;
 }
 
+.timeline-circle {
+  position: relative;
+}
+
 .circle {
   background-color: var(--color-terracota);
   width: 5rem;
@@ -120,7 +147,8 @@ object {
 .circle::before {
   content: "";
   position: absolute;
-  margin-left: 2.2rem;
+  left: 44.82%;
+  top: 0.1rem;
   background-color: var(--color-coffee-milk);
   height: 24rem;
   width: .6rem;
