@@ -90,7 +90,7 @@ object {
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  max-width: 40%;
+  max-width: 50%;
 }
 
 .vertical-line {

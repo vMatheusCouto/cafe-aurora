@@ -23,6 +23,7 @@
   --color-coffee-white: #FBEDDC;
 
   color: var(--color-coffee-white);
+  line-height: normal;
 }
 
 body {
@@ -34,10 +35,16 @@ header {
   max-height: 10rem;
   position: fixed;
   z-index: 1;
+  top: 4rem;
 }
 
 h1 {
   font-size: 12.8rem;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 9.6rem;
   font-weight: normal;
 }
 
@@ -97,9 +104,6 @@ a {
   gap: 2rem
 }
 
-.nav-list-selected {
-  font-weight: bold;
-}
 
 .absolute-object {
   position: absolute;
@@ -115,6 +119,15 @@ a {
   z-index: -2
 }
 
+.text-title {
+  font-size: 3.8rem;
+  font-weight: normal;
+}
+
+.text-subtitle {
+  font-size: 2rem;
+}
+
 .text-brown {
   color: var(--color-coffee-brown);
 }
@@ -125,4 +138,26 @@ a {
 
 .text-terracota {
   color: var(--color-terracota);
+}
+
+.bg-brown {
+  background-color: var(--color-coffee-brown);
+}
+
+.bg-white {
+  background-color: var(--color-coffee-white)
+}
+
+.bg-terracota {
+  background-color: var(--color-terracota)
+}
+
+.button-1 {
+  padding: 2rem;
+  width: 100%;
+  border-radius: 2;
+}
+
+.bold {
+  font-weight: bold;
 }

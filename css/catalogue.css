@@ -1,0 +1,26 @@
+#catalogue-grid {
+  background-color: var(--color-beige-light);
+  border-radius: 2.4rem 0 0 0;
+  display: inline;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+  justify-content: start;
+  align-items: center;
+  background: none;
+  max-width: 32rem;
+}
+
+.card img {
+  border-radius: 2.4rem;
+  width: 100%;
+}
+
+.star {
+  color: var(--color-terracota-yellow);
+  fill: var(--color-terracota-yellow);
+}
+
