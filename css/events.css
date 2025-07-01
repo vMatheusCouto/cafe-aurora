@@ -1,0 +1,26 @@
+body{
+  display: inline;
+}
+.makecoffee
+{
+  background-color: var(--color-coffee-white);
+}
+.musical-night
+{
+  background-color: var(--color-coffee-brown);
+}
+.float-img
+{
+  width: 657px;
+  height: 458px;
+  border-radius: 50px;
+}
+#float-left
+{
+  float: left;
+}
+#float-right
+{
+  float: right;
+}
+
