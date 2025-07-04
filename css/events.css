@@ -1,5 +1,36 @@
-body{
-  display: inline;
+.section-events
+{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.container-events {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 5vw;
+  color: white;
+  z-index: 1;
+}
+.item1 {
+  align-self: flex-end;
+  max-width: 40%;
+  margin-bottom: 40px;
+}
+.item2 {
+  text-align: right;
+  max-width: 40%;
+}
+.section-events h2
+{
+  font-size: 6rem;
+}
+.section-events p
+{
+  font-size: 3rem;
 }
 .makecoffee
 {
