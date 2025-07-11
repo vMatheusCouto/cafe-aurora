@@ -1,0 +1,50 @@
+.contacts
+{
+  height: 100vh;
+  background-color: var(--color-coffee-milk);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-contacts
+{
+  background-color: var(--color-coffee-white);
+  width: 92%;
+  max-width: 1327px;
+  height: 87.5%;
+  max-height: 805px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-coffee-milk);
+}
+.left-side
+{
+  height: 82.47%;
+}
+.left-side img
+{
+  height: 100%;
+  width: auto;
+}
+form
+{
+display: flex;
+flex-direction:column;
+justify-content: center;
+align-items: center;
+gap: 1.25rem;
+}
+input, textarea {
+  border: none;
+  border-bottom: 2px solid var(--color-coffee-milk);
+  background-color: transparent;
+  padding: 10px 5px;
+  font-size: 1rem;
+  color: var(--color-coffee-milk);
+  font-family: 'Roboto Serif', serif;
+  width:50%;
+}
