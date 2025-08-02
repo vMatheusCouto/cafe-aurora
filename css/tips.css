@@ -1,0 +1,32 @@
+.tips-body{
+  background-color: var(--color-coffee-white);
+}
+.bg-tips
+{
+transform: translateY(-7px);
+width: 100%;
+}
+.bg-tips img{
+  width: 100%;
+}
+.hero
+{
+  transform: translateY(-90px);
+  margin: auto;
+  width: 81.94vw;
+  height: 365px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.text-hero h1
+{
+  color: var(--color-coffee-brown);
+  font-size: 4rem;
+}
+.text-hero p
+{
+  color: var(--color-coffee-brown);
+  font-size: 2rem;
+}
+
