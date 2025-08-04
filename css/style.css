@@ -48,6 +48,7 @@ h2 {
   font-weight: normal;
 }
 
+
 p {
   font-size: 2.8rem;
   line-height: 4rem;
@@ -112,6 +113,10 @@ input, textarea {
   opacity: 0.7;
 }
 
+#hero img {
+  scale: 1.7;
+}
+
 #hero div {
   max-width: 50%;
 }
@@ -120,6 +125,8 @@ input, textarea {
   background-color: var(--color-coffee-milk);
   padding: 10rem;
   padding-top: 20rem;
+  display: flex;
+
 }
 
 #user-experience {
@@ -178,9 +185,18 @@ input, textarea {
 }
 
 .button-1 {
-  padding: 2rem;
+  padding: 1.2rem 2rem;
   flex: 1;
   border-radius: 16px;
+  font-size: 1.6rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.button-1:hover {
+  background-color: var(--color-coffee-brown);
+  cursor: pointer;
 }
 
 .bold {

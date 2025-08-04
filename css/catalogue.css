@@ -12,6 +12,20 @@
   gap: 2rem;
 }
 
+.catalogue-grid {
+  background-color: var(--color-beige);
+  border-radius: 2.4rem;
+  display: flex;
+  position: absolute;
+  top: 50vh;
+  width: 100vw;
+  padding: 4rem;
+  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
 #catalogue-hero {
   display: flex;
 }
@@ -49,9 +63,3 @@
   color: var(--color-terracota-yellow);
   fill: var(--color-terracota-yellow);
 }
-
-button {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-

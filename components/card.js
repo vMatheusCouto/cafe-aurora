@@ -17,12 +17,14 @@ class Card extends HTMLElement {
               <i data-lucide="star" class="star"></i>
               <i data-lucide="star" class="star"></i>
             </div>
-            <h3>R$ 30,99</h3>
+            <p style="font-family: Poppins, sans-serif" class="text-brown">R$ 30,99</p>
           </div>
-          <button class="button-1 bg-terracota">Adicionar ao carrinho</button>
+          <button class="button-1 bg-terracota">Conhecer</button>
         </div>
     `;
+    lucide.createIcons();
   }
+
 }
 
 customElements.define('card-component', Card)
