@@ -96,6 +96,16 @@ button:hover {
   transition: all 0.3s ease;
 }
 
+#icons {
+  fill: var(--color-coffee-milk);
+  stroke-width: 0;
+}
+
+#instagram {
+  fill: var(--color-coffee-milk);
+  stroke-width: 2;
+  stroke: var(--color-coffee-white);
+}
 
 @media (max-width: 1024px) {
   .container-contacts {

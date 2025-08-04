@@ -7,6 +7,9 @@
   width: 100vw;
   padding: 4rem;
   flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
 }
 
 #catalogue-hero {
