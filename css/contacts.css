@@ -1,3 +1,10 @@
+
+
+i {
+  color: var(--color-coffee-brown);
+  border: 0px solid #fff;
+}
+
 .contacts
 {
   height: 100vh;
@@ -42,31 +49,6 @@
 {
   height: 100%;
   width: auto;
-}
-
-form
-{
-width: 100%;
-height: 86%;
-display: flex;
-flex-direction:column;
-justify-content: center;
-align-items: center;
-gap: 2.25rem;
-margin-bottom: 0;
-}
-
-input, textarea {
-  border: none;
-  border-bottom: 2px solid var(--color-coffee-milk);
-  background-color: transparent;
-  padding: 10px 5px;
-  font-size: 1.5rem;
-  color: var(--color-coffee-milk);
-  font-family: 'Roboto Serif', serif;
-  width:100%;
-  line-height: 4rem;
-  opacity: 0.7;
 }
 
 .title
@@ -197,6 +179,7 @@ button:hover {
   }
 }
 @media (max-width: 480px) {
+
   .left-side {
     max-height: 220px;
   }
@@ -228,6 +211,9 @@ button:hover {
   }
 
   .social-icons i {
+    color: aqua;
+    fill: aliceblue;
+    border: none;
     width: 28px;
     height: 28px;
   }
