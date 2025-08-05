@@ -5,11 +5,11 @@ class Header extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
-      <header>
+      <header id="header-nav-list" class="backdrop-blur">
         <nav>
           <ul>
-            <li class="secondary">Café Aurora</li>
-            <li>
+            <li id="logo" class="secondary">Café Aurora</li>
+            <li class="hidden-option">
               <ul id="nav-list">
                 <li id="home" class="variable"><a href="/">Início</a></li>
                 <li id="about" class="variable"><a href="/pages/about.html">Sobre nós</a></li>
@@ -18,11 +18,20 @@ class Header extends HTMLElement {
                 <li id="events" class="variable"><a href="/pages/events.html">Eventos</a></li>
               </ul>
             </li>
-            <li><button class="button-1 bg-brown" style="border-radius: 20rem;">Entrar</button></li>
+            <li class="hidden-option"><button class="button-1 bg-brown" style="border-radius: 20rem;">Entrar</button></li>
           </ul>
         </nav>
       </header>
-    `
+    `;
+
+    if (window.matchMedia("(max-width: 768px)").matches) {
+      this.querySelector('#logo').addEventListener('click', () => {
+        this.querySelectorAll('.hidden-option').forEach((e) => {
+          e.classList.toggle("hidden")
+        })
+        this.querySelector('#header-nav-list').classList.toggle("open")
+      });
+    }
   }
 }
 

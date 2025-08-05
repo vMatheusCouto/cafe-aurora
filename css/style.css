@@ -35,7 +35,8 @@ header {
   max-height: 10rem;
   position: fixed;
   z-index: 2;
-  top: 4rem;
+  top: 0;
+  padding-top: 4rem;
 }
 
 h1 {
@@ -261,4 +262,33 @@ input, textarea {
 
 .bold {
   font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+.backdrop-blur {
+  backdrop-filter: blur(10px) brightness(0.7);
+  -webkit-mask-image: linear-gradient(to top, transparent 25%, black 75%);
+  mask-image: linear-gradient(to top, transparent 5%, black 25%);
+  padding-bottom: 20rem;
+}
+
+.open {
+  padding-bottom: 6rem;
+  -webkit-mask-image: linear-gradient(to top, transparent 25%, black 75%);
+  mask-image: linear-gradient(to top, transparent 5%, black 45%);
+}
+
+@media screen and (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  header {
+    max-height: 60rem;
+    padding-bottom: 6rem;
+    padding-top: 2rem;
+  }
 }
