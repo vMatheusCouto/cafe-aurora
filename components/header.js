@@ -5,11 +5,11 @@ class Header extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
-      <header>
+      <header id="header-nav-list" class="backdrop-blur closed">
         <nav>
           <ul>
-            <li class="secondary">Café Aurora</li>
-            <li>
+            <li id="logo" class="secondary">Café Aurora</li>
+            <li class="hidden-option hidden">
               <ul id="nav-list">
                 <li id="home" class="variable"><a href="/">Início</a></li>
                 <li id="about" class="variable"><a href="/pages/about.html">Sobre nós</a></li>
@@ -18,25 +18,19 @@ class Header extends HTMLElement {
                 <li id="events" class="variable"><a href="/pages/events.html">Eventos</a></li>
               </ul>
             </li>
-            <li><button>Entrar</button></li>
+            <li class="hidden-option hidden"><button class="button-1 bg-brown" style="border-radius: 20rem;">Entrar</button></li>
           </ul>
         </nav>
       </header>
-    `
-    const path = window.location.pathname;
-    const page = path.split("/").pop().split(".").shift();
-    console.log(page)
-    try {
-      const selectedItem = document.querySelector("#" + page)
-      if (selectedItem) {
-        selectedItem.classList.add("bold")
-      }
-    } catch (e) {
-      this.querySelectorAll(".variable").forEach((e) => {
-        e.classList.add("text-brown")
-      })
-      document.getElementById("home").classList.add("bold")
-      console.log(e)
+    `;
+
+    if (window.matchMedia("(max-width: 768px)").matches) {
+      this.querySelector('#logo').addEventListener('click', () => {
+        this.querySelectorAll('.hidden-option').forEach((e) => {
+          e.classList.toggle("hidden")
+        })
+        this.querySelector('#header-nav-list').classList.toggle("closed")
+      });
     }
   }
 }

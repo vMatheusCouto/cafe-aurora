@@ -1,11 +1,9 @@
-body {
-  background-color: var(--color-coffee-white);
+#events {
+  font-weight: bold;
 }
 
-.section-events {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
+body {
+  background-color: var(--color-coffee-white);
 }
 
 .container-events {
@@ -174,7 +172,7 @@ body {
 
 @media screen and (max-width: 480px) {
   .section-events {
-    padding: 4rem 1rem;
+    padding: 8rem 1rem;
   }
 
   .container-events {
