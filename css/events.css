@@ -6,12 +6,6 @@ body {
   background-color: var(--color-coffee-white);
 }
 
-.section-events {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-}
-
 .container-events {
   position: relative;
   display: flex;
@@ -178,7 +172,7 @@ body {
 
 @media screen and (max-width: 480px) {
   .section-events {
-    padding: 4rem 1rem;
+    padding: 8rem 1rem;
   }
 
   .container-events {
