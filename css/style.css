@@ -40,7 +40,7 @@ header {
 }
 
 h1 {
-  font-size: clamp(2.8rem, 8vw, 12.8rem);
+  font-size: clamp(2.8rem, 16vw, 12.8rem);
   font-weight: normal;
   line-height: 12rem;
 }
