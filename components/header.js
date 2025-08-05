@@ -8,7 +8,7 @@ class Header extends HTMLElement {
       <header id="header-nav-list" class="backdrop-blur closed">
         <nav>
           <ul>
-            <li id="logo" class="secondary">Café Aurora</li>
+            <li id="logo" class="secondary">Café Aurora<span class="hidden-option hidden"><br/><div></div></span></li>
             <li class="hidden-option hidden">
               <ul id="nav-list">
                 <li id="home" class="variable"><a href="/">Início</a></li>
