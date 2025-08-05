@@ -49,9 +49,6 @@ object {
   border-radius: 2rem;
 }
 
-#about-where p {
-}
-
 #about-where + section {
   justify-content: flex-start;
   padding-top: 10rem;
@@ -161,4 +158,24 @@ object {
 
 .bg-brown {
   background-color: var(--color-coffee-milk);
+}
+
+@media (max-width: 768px) {
+  main {
+    max-width: 100vw;
+    overflow: hidden;
+  }
+
+  #about-hero img {
+    height: 100%;
+  }
+
+  object {
+    display: none
+  }
+
+  p {
+    font-size: 2rem;
+  }
+
 }
