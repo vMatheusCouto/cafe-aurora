@@ -284,7 +284,7 @@ input, textarea {
     mask-image: linear-gradient(to top, transparent 5%, black 25%);
     padding-bottom: 20rem;
   }
-  .open {
+  .closed {
     padding-bottom: 6rem;
     -webkit-mask-image: linear-gradient(to top, transparent 25%, black 75%);
     mask-image: linear-gradient(to top, transparent 5%, black 45%);
