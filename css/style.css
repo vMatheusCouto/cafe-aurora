@@ -34,13 +34,14 @@ header {
   width: 100vw;
   max-height: 10rem;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 4rem;
 }
 
 h1 {
   font-size: 12.8rem;
   font-weight: normal;
+  line-height: 12rem;
 }
 
 h2 {
@@ -114,7 +115,10 @@ input, textarea {
 }
 
 #hero img {
-  scale: 1.7;
+  position: absolute;
+  width: 75rem;
+  right: 4rem;
+  top: 0;
 }
 
 #hero div {
@@ -126,7 +130,40 @@ input, textarea {
   padding: 10rem;
   padding-top: 20rem;
   display: flex;
+}
 
+#hero div div div {
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  gap: 0;
+}
+
+#hero div div div p {
+  font-weight: 900;
+  font-size: 5.2rem;
+}
+
+#hero span {
+  color: var(--color-terracota-yellow);
+}
+
+#hero div > div {
+  display: flex;
+  gap: 2rem;
+}
+
+#hero button svg {
+  color: var(--color-coffee-white);
+  scale: 2;
+  margin-left: 1.6rem;
+  margin-right: .4rem;
+  border-radius: 100rem;
+  background-color: var(--color-coffee-milk);
+  transform: scaleY(-1);
+}
+
+#hero label {
+  font-size: 2rem;
 }
 
 #user-experience {
@@ -160,6 +197,10 @@ input, textarea {
   font-size: 2rem;
 }
 
+.text-milk {
+  color: var(--color-coffee-milk)
+}
+
 .text-brown {
   color: var(--color-coffee-brown);
 }
@@ -170,6 +211,10 @@ input, textarea {
 
 .text-terracota {
   color: var(--color-terracota);
+}
+
+.bg-milk {
+  background-color: var(--color-coffee-milk);
 }
 
 .bg-brown {
@@ -184,7 +229,7 @@ input, textarea {
   background-color: var(--color-terracota)
 }
 
-.button-1 {
+.button-1, .button-2 {
   padding: 1.2rem 2rem;
   flex: 1;
   border-radius: 16px;
@@ -197,6 +242,21 @@ input, textarea {
 .button-1:hover {
   background-color: var(--color-coffee-brown);
   cursor: pointer;
+}
+
+.button-2 {
+  border-radius: 100rem;
+  font-weight: 500;
+}
+
+.button-2:hover {
+  background-color: var(--color-beige);
+  cursor: pointer;
+  fill: var(--color-beige);
+}
+
+.button-2:hover svg {
+  stroke: var(--color-beige);
 }
 
 .bold {

@@ -11,6 +11,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script src="../components/header.js" type="text/javascript" defer></script>
+  <style>
+    .variable {
+      color: var(--color-coffee-brown);
+    }
+    #home {
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
   <header-component></header-component>
@@ -20,13 +28,86 @@
       <div>
         <h1>Café Aurora</h1>
         <p>O sabor que transforma seu dia. Selecionamos os melhores grãos para oferecer uma experiência única e inesquecível.</p>
+        <div>
+          <div>
+            <p>150K<span>+</span></p>
+            <label>Vendas</label>
+          </div>
+          <div>
+            <p>170K<span>+</span></p>
+            <label>Clientes</label>
+          </div>
+        </div>
+        <button style="font-size: 3.2rem;" class="button-2 bg-white text-milk">
+          CONHECER
+          <i data-lucide="arrow-down-right"></i>
+        </button>
+      </div>
+      <img src="https://i.postimg.cc/fbJnVttY/image-1.png" alt="">
+    </section>
+    <section id="featured-section">
+      <div class="featured-card">
+        <i data-lucide="coffee"></i>
+        <h3>Grãos Árabes</h3>
+        <p>Colhido e preparado especialmente para você.</p>
+      </div>
+      <div class="featured-card">
+        <i data-lucide="coffee"></i>
+        <h3>Grãos Árabes</h3>
+        <p>Colhido e preparado especialmente para você.</p>
+      </div>
+      <div class="featured-card">
+        <i data-lucide="coffee"></i>
+        <h3>Grãos Árabes</h3>
+        <p>Colhido e preparado especialmente para você.</p>
+      </div>
+      <div class="featured-card">
+        <h3>Sobre Nós</h3>
+        <p>
+          Acreditamos que cada café conta um história .
+          A nossa começa em grãos e termina na sua xícara.
+        </p>
+        <img src="" alt="">
       </div>
     </section>
-    <section></section>
     <section id="user-experience">
       <h1>Uma experiência ÚNICA</h1>
+      <div>
+        <div class="user-card">
+          <p>“O melhor café  que já tomei,
+            é realmente uma experiência única!”</p>
+          <div></div>
+          <div>
+            <p>Dr. Renato Vasconcellos</p>
+            <img src="" alt="">
+          </div>
+        </div>
+        <div class="user-card">
+          <p>“O melhor café  que já tomei,
+            é realmente uma experiência única!”</p>
+          <div></div>
+          <div>
+            <p>Dr. Renato Vasconcellos</p>
+            <img src="" alt="">
+          </div>
+        </div>
+        <div class="user-card">
+          <p>“O melhor café  que já tomei,
+            é realmente uma experiência única!”</p>
+          <div></div>
+          <div>
+            <p>Dr. Renato Vasconcellos</p>
+            <img src="" alt="">
+          </div>
+        </div>
+      </div>
     </section>
   </main>
   <footer></footer>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 </html>

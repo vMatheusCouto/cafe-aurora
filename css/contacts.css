@@ -1,4 +1,6 @@
-
+#contacts {
+  font-weight: bold;
+}
 
 i {
   color: var(--color-coffee-brown);

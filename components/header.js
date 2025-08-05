@@ -18,26 +18,11 @@ class Header extends HTMLElement {
                 <li id="events" class="variable"><a href="/pages/events.html">Eventos</a></li>
               </ul>
             </li>
-            <li><button>Entrar</button></li>
+            <li><button class="button-1 bg-brown" style="border-radius: 20rem;">Entrar</button></li>
           </ul>
         </nav>
       </header>
     `
-    const path = window.location.pathname;
-    const page = path.split("/").pop().split(".").shift();
-    console.log(page)
-    try {
-      const selectedItem = document.querySelector("#" + page)
-      if (selectedItem) {
-        selectedItem.classList.add("bold")
-      }
-    } catch (e) {
-      this.querySelectorAll(".variable").forEach((e) => {
-        e.classList.add("text-brown")
-      })
-      document.getElementById("home").classList.add("bold")
-      console.log(e)
-    }
   }
 }
 
