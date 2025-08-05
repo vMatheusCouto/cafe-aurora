@@ -7,6 +7,7 @@
   -moz-osx-font-smoothing: grayscale;
 
   font-optical-sizing: auto;
+
 }
 
 :root {
@@ -274,6 +275,8 @@ input, textarea {
     max-height: 60rem;
     padding-bottom: 6rem;
     padding-top: 2rem;
+    transition: all 0.3s ease-in-out, width 0.3s linear 0.1s;
+
   }
   .backdrop-blur {
     backdrop-filter: blur(10px) brightness(0.7);
