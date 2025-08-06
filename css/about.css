@@ -14,6 +14,10 @@ object {
   width: auto;
 }
 
+footer {
+  margin-top: 50rem;
+}
+
 #hero-content {
   display: flex;
   flex-direction: row;
@@ -248,5 +252,9 @@ object {
   .timeline-block {
     width: 85%;
     max-width: 90%;
+  }
+
+  footer {
+    margin-top: 100rem;
   }
 }
