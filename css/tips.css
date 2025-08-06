@@ -3,8 +3,10 @@
   font-weight: bold;
 }
 object{
-  transform: translateY(-10px);
+  margin-top: -10px;
   width: 100vw;
+  z-index: -1;
+  margin-bottom: -150px;
 }
 .tips-body{
   background-color: var(--color-coffee-white);
@@ -19,7 +21,7 @@ width: 100%;
 }
 .hero
 {
-  transform: translateY(-150px);
+  margin-bottom: 0;
   margin: auto;
   width: 81.94vw;
   height: 50vh;
@@ -33,22 +35,26 @@ width: 100%;
 #text-hero h1
 {
   color: var(--color-coffee-brown);
-  font-size: 4rem;
-  line-height: 4rem;
+  font-size: 6rem;
+  line-height: 6rem;
 }
 #text-hero p
 {
   color: var(--color-coffee-brown);
-  font-size: 2rem;
+  font-size: 4rem;
 }
 .essential-tips{
-  transform: translateY(-250px);
+  margin-bottom: 0;
+  margin-top: -70px;
   width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0 4rem 4rem 4rem;
+}
+.essential-tips h2{
+  font-size: 6rem;
 }
 .grid-essential{
   width: 86%;
@@ -57,7 +63,6 @@ width: 100%;
   grid-template-rows:1fr 1fr;
   row-gap: 1rem;
   column-gap: 1rem;
-
 }
 .rows{
   display: flex;
@@ -85,8 +90,24 @@ width: 100%;
 }
 .methods{
   width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4rem 4rem 4rem;
+  margin-top: -250px;
 }
-.methods-grid{
+.methods h2{
+  font-size: 6rem;
+}
+.grid-methods{
+  margin-top: 1rem;
+  width: 86%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  row-gap: 1rem;
+  column-gap: 1rem;
+}
+#types{
+  margin-top: -370px;
 }
