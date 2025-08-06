@@ -6,6 +6,12 @@ body {
   background-color: var(--color-coffee-white);
 }
 
+.section-events {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
 .container-events {
   position: relative;
   display: flex;
@@ -19,7 +25,7 @@ body {
 
 .item1 {
   align-self: flex-end;
-  max-width: 40%;
+  max-width: 50%;
   margin-bottom: 40px;
 }
 
