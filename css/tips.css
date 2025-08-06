@@ -113,3 +113,111 @@ width: 100%;
 #types{
   margin-top: -370px;
 }
+/* ---------------------------------- */
+/* --- PONTO DE QUEBRA: TABLETS --- */
+/* ---------------------------------- */
+@media (max-width: 1024px) {
+  /* Ajusta o tamanho da fonte no hero para caber melhor */
+  #text-hero h1 {
+    font-size: 4.5rem;
+    line-height: 1.2;
+  }
+  #text-hero p {
+    font-size: 3rem;
+    line-height: 1.4;
+  }
+
+  /* Reduz a imagem do hero */
+  .hero img {
+    max-width: 350px;
+  }
+
+  /* Altera os grids para 2 colunas */
+  .grid-essential,
+  .grid-methods {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Reduz o tamanho dos títulos das seções */
+  .essential-tips h2,
+  .methods h2 {
+    font-size: 4.5rem;
+  }
+
+  /* Ajusta as margens negativas para evitar sobreposição nesta tela */
+  .essential-tips {
+    margin-top: -300px;
+  }
+  .methods {
+    margin-top: -570px;
+  }
+  #types {
+    margin-top: -720px;
+  }
+}
+
+/* ---------------------------------- */
+/* --- PONTO DE QUEBRA: CELULARES --- */
+/* ---------------------------------- */
+@media (max-width: 768px) {
+  /* Empilha o conteúdo do hero verticalmente */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    height: auto; /* Altura automática para o conteúdo caber */
+    padding: 5rem 0;
+  }
+
+  #text-hero {
+    margin-left: 0;
+    margin-bottom: 2rem;
+  }
+
+  /* Reduz drasticamente as fontes para telas pequenas */
+  #text-hero h1 {
+    font-size: 3.2rem;
+  }
+  #text-hero p {
+    font-size: 1.8rem;
+  }
+  .essential-tips h2,
+  .methods h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .card h3 {
+    font-size: 2.2rem;
+  }
+  .card p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+
+  /* Remove as margens negativas que quebram o layout no celular
+     e adiciona uma margem positiva para espaçamento */
+  object {
+    margin-bottom: 0;
+  }
+  .essential-tips,
+  .methods,
+  #types {
+    margin-top: 5rem; /* Espaçamento padrão entre as seções */
+    padding: 0 2rem 2rem 2rem; /* Ajusta o padding lateral */
+  }
+
+  /* Altera os grids para 1 coluna */
+  .grid-essential,
+  .grid-methods {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .card {
+    height: auto; /* Altura automática para o texto caber */
+    padding: 2rem;
+  }
+  #types {
+    margin-top: -220px;
+  }
+
+}
