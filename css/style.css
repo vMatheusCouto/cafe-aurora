@@ -7,7 +7,6 @@
   -moz-osx-font-smoothing: grayscale;
 
   font-optical-sizing: auto;
-
 }
 
 :root {
@@ -29,6 +28,7 @@
 
 body {
   background-color: var(--color-beige);
+  overflow-x: hidden;
 }
 
 header {
@@ -441,6 +441,7 @@ input, textarea {
     margin: 0;
     width: 24rem;
     height: 24rem;
+    border-radius: 2.3rem;
   }
 
   #user-experience h1 {
@@ -497,5 +498,9 @@ input, textarea {
 
   #hero div button {
     max-height: 6rem;
+  }
+
+  #hero {
+
   }
 }
