@@ -2,6 +2,11 @@
   font-weight: bold;
 }
 
+footer {
+  margin-top: 140rem;
+}
+
+
 #catalogue-grid {
   background-color: var(--color-beige);
   border-radius: 2.4rem;
@@ -68,6 +73,9 @@
 }
 
 @media (max-width: 480px) {
+  footer {
+    margin-top: 910rem;
+  }
   #catalogue-grid {
     grid-template-columns: repeat(1, 1fr);
   }
