@@ -8,9 +8,11 @@ object{
   z-index: -1;
   margin-bottom: -150px;
 }
+main{
+  color: var(--color-coffee-brown);
+}
 .tips-body{
   background-color: var(--color-coffee-white);
-  color: var(--color-coffee-brown);
 }
 .bg-tips
 {
