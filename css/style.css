@@ -24,11 +24,18 @@
 
   color: var(--color-coffee-white);
   line-height: normal;
+  max-width: 100vw;
 }
 
-body {
+html, body {
   background-color: var(--color-beige);
-  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+#body {
+  max-width: 100vw;
+  overflow-x: hidden !important;
+  position: relative;
 }
 
 header {
@@ -43,7 +50,7 @@ header {
 h1 {
   font-size: clamp(2.8rem, 16vw, 12.8rem);
   font-weight: normal;
-  line-height: 12rem;
+  line-height: clamp(6rem, 10vw, 12rem);
 }
 
 h2 {
@@ -490,6 +497,7 @@ input, textarea {
   #hero img {
     width: 30rem;
     height: auto;
+    display: none;
   }
 
   .absolute-object {
