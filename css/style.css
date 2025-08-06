@@ -581,4 +581,8 @@ footer > div:nth-child(2) {
     grid-column-end: 1;
   }
 
+  #hero img {
+    display: none;
+  }
+
 }
