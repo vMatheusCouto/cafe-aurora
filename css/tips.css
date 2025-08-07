@@ -148,7 +148,6 @@ width: 100%;
     margin-top: -720px;
   }
 }
-
 @media (max-width: 768px) {
 
   .hero {
@@ -229,8 +228,16 @@ width: 100%;
     font-size: 1.5rem;
   }
 
-
   .card {
     padding: 1.5rem;
+  }
+  .essential-tips{
+    margin-bottom: 20px;
+  }
+  .methods{
+    margin-bottom: 20px;
+  }
+  #types{
+    margin-bottom: 20px;
   }
 }
