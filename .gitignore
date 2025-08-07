@@ -1,5 +1,5 @@
 .vscode/
 build/
 config.js
-./config.js
 /config.js
+./config.js
