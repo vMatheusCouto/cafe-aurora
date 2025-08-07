@@ -11,11 +11,11 @@ class Header extends HTMLElement {
             <li id="logo" class="secondary">Café Aurora<span class="hidden-option hidden"><br/><div></div></span></li>
             <li class="hidden-option hidden">
               <ul id="nav-list">
-                <li id="home" class="variable"><a href="/">Início</a></li>
-                <li id="about" class="variable"><a href="/pages/about.html">Sobre nós</a></li>
-                <li id="catalogue" class="variable"><a href="/pages/catalogue.html">Catálogo</a></li>
-                <li id="tips" class="variable"><a href="/pages/tips.html">Dicas</a></li>
-                <li id="events" class="variable"><a href="/pages/events.html">Eventos</a></li>
+                <li id="home" class="variable"><a>Início</a></li>
+                <li id="about" class="variable"><a>Sobre nós</a></li>
+                <li id="catalogue" class="variable"><a>Catálogo</a></li>
+                <li id="tips" class="variable"><a>Dicas</a></li>
+                <li id="events" class="variable"><a>Eventos</a></li>
               </ul>
             </li>
             <li class="hidden-option hidden"><button class="button-1 bg-brown" style="border-radius: 20rem;"><i data-lucide="circle-user"></i>Entrar</button></li>
@@ -23,6 +23,9 @@ class Header extends HTMLElement {
         </nav>
       </header>
     `;
+
+
+
 
     lucide.createIcons();
 
@@ -45,6 +48,10 @@ class Header extends HTMLElement {
         document.getElementById("header-nav-list").style.backdropFilter = "blur(0px)";
       }
     }
+
+    Object.entries(url).forEach(([item, s]) => {
+      this.querySelector(`#${item} a`).setAttribute('href', s)
+    })
   }
 }
 
