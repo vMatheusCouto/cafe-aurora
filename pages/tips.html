@@ -1,20 +1,174 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dicas</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css">
-  <script src="../components/header.js" type="text/javascript" defer></script>
-</head>
-<body>
-  <header-component></header-component>
-  <main></main>
-  <footer></footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dicas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/tips.css" />
+    <script src="../components/header.js" type="text/javascript" defer></script>
+    <script src="../components/footer.js" type="text/javascript" defer></script>
+  </head>
+  <body class="tips-body">
+    <header-component></header-component>
+    <main>
+      <div class="tips-content-wrapper">
+      <object data="../assets/svg/bg-tips.svg"></object>
+      <section class="hero">
+        <div id="text-hero">
+          <h1>
+            Dicas para<br />
+            apreciadores de café
+          </h1>
+          <p>
+            Tudo que você precisa saber para <br />
+            preparar um bom café
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://i.postimg.cc/6pPnWt4C/tips-coffee.png"
+            alt="xícara de café"
+          />
+        </div>
+      </section>
+      <section class="essential-tips">
+        <h2>Dicas essenciais</h2>
+        <div class="grid-essential">
+          <div class="card">
+              <div  class="rows">
+                <img src="https://i.postimg.cc/VLVBHMhS/grao.png" alt="grão de café">
+                <h3>Use o café fresco</h3>
+              </div>
+             <p>
+              O café moído na hora preserva mais os aromas e sabores naturais. Evite estocar por muito tempo.
+             </p>
+          </div>
+          <div class="card">
+              <div class="rows">
+                <img src="https://i.postimg.cc/VLVBHMhS/grao.png" alt="grão de café">
+                <h3>Armazene corretamente</h3>
+              </div>
+             <p>
+              Guarde o café em pote hermético, longe da luz e do calor para manter a qualidade dos grãos.
+             </p>
+          </div>
+          <div class="card">
+              <div class="rows">
+                <img src="https://i.postimg.cc/VLVBHMhS/grao.png" alt="grão de café">
+                <h3>Água de qualidade</h3>
+              </div>
+             <p>
+              Sempre água filtrada ou mineral. A qualidade da água influencia diretamente no sabor.
+             </p>
+          </div>
+          <div class="card">
+              <div class="rows">
+                <img src="https://i.postimg.cc/VLVBHMhS/grao.png" alt="grão de café">
+                <h3>Preaqueça os utensílios</h3>
+              </div>
+             <p>
+              Ao aquecer xícaras e coadores antes do preparo, a temperatura do café é preservada por mais tempo.
+             </p>
+          </div>
+          <div class="card">
+              <div class="rows">
+                <img src="https://i.postimg.cc/VLVBHMhS/grao.png" alt="grão de café">
+                <h3>Meça corretamente</h3>
+              </div>
+             <p>
+              Use proporções ideais: em média, 10g de café para 100ml de água. Isso evita um sabor fraco ou amargo.
+             </p>
+          </div>
+          <div class="card">
+              <div class="rows">
+                <img src="https://i.postimg.cc/VLVBHMhS/grao.png" alt="grão de café">
+                <h3>Não ferva a água</h3>
+              </div>
+             <p>
+              A temperatura ideal está entre 90 °C e 96 °C. Água fervente pode queimar o pó e amargar o sabor.
+             </p>
+          </div>
+        </div>
+      </section>
+      <section class="methods">
+        <h2>
+          Métodos de preparo
+        </h2>
+        <div class="grid-methods">
+          <div class="card">
+              <div  class="rows">
+                <img src="https://i.postimg.cc/VLVBHMhS/grao.png" alt="grão de café">
+                <h3>Expresso</h3>
+              </div>
+             <p>
+              Preparado sob alta pressão, o expresso é intenso, encorpado e com crema espessa. Ideal para quem busca sabor marcante.
+             </p>
+          </div>
+          <div class="card">
+              <div class="rows">
+                <img src="https://i.postimg.cc/VLVBHMhS/grao.png" alt="grão de café">
+                <h3>Coado</h3>
+              </div>
+             <p>
+             Um método clássico e suave. Realça notas aromáticas e é ideal para apreciar cafés especiais com mais delicadeza.
+             </p>
+          </div>
+          <div class="card">
+              <div class="rows">
+                <img src="https://i.postimg.cc/VLVBHMhS/grao.png" alt="grão de café">
+                <h3>Prensa Francesa</h3>
+              </div>
+             <p>
+              Destaca os óleos naturais do café, resultando em uma bebida encorpada. Requer moagem grossa e infusão lenta.
+             </p>
+          </div>
+      </section>
+      <section class="methods" id="types">
+        <h2>
+          Tipos de Grãos e Torra
+        </h2>
+        <div class="grid-methods">
+          <div class="card">
+              <div  class="rows">
+                <img src="https://i.postimg.cc/VLVBHMhS/grao.png" alt="grão de café">
+                <h3>Arábica</h3>
+              </div>
+             <p>
+              Mais doce, suave e com acidez equilibrada. É o grão mais valorizado e presente no Café Aurora.
+             </p>
+          </div>
+          <div class="card">
+              <div class="rows">
+                <img src="https://i.postimg.cc/VLVBHMhS/grao.png" alt="grão de café">
+                <h3>Robusta</h3>
+              </div>
+             <p>
+              Mais amargo e forte, com o dobro de cafeína. Ideal para quem gosta de cafés intensos.
+             </p>
+          </div>
+          <div class="card">
+              <div class="rows">
+                <img src="https://i.postimg.cc/VLVBHMhS/grao.png" alt="grão de café">
+                <h3>Torra Clara</h3>
+              </div>
+             <p>
+              Realça a acidez e os aromas florais e frutados. Perfeita para métodos filtrados.
+             </p>
+          </div>
+      </section>
+    </div>
+    </main>
+      <footer-component></footer-component>
+      <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+  </body>
 </html>
