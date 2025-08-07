@@ -30,10 +30,10 @@ class Footer extends HTMLElement {
             <div class="footer-item footer-links">
               <h3>Links úteis</h3>
               <ul>
-                <li>Entre em contato</li>
-                <li>Comprar</li>
-                <li>Comprar</li>
-                <li>Comprar</li>
+                <li><a href="/cafe-aurora/pages/contacts.html">Entre em contato</a></li>
+                <li><a>Instagram</a></li>
+                <li><a>Facebook</a></li>
+                <li><a>YouTube</a></li>
               </ul>
             </div>
             <div class="footer-item">

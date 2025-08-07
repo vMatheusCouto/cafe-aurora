@@ -402,6 +402,13 @@ header button {
  gap: 2rem;
 }
 
+#logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
 .featured-card:hover {
   transform: scale(1.05);
   z-index: 100;
