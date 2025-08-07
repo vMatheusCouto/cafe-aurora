@@ -24,12 +24,10 @@ class Header extends HTMLElement {
       </header>
     `;
 
-
-
-
     lucide.createIcons();
 
-    if (window.matchMedia("(max-width: 768px)").matches) {
+    const smallDevice = window.matchMedia("(max-width: 768px)").matches
+    if (smallDevice) {
       this.querySelector('#logo').addEventListener('click', () => {
         this.querySelectorAll('.hidden-option').forEach((e) => {
           e.classList.toggle("hidden")
@@ -38,7 +36,9 @@ class Header extends HTMLElement {
       });
     }
 
-    window.onscroll = function() {scrollFunction()};
+    if (!smallDevice) {
+      window.onscroll = function() {scrollFunction()};
+    }
 
     function scrollFunction() {
       if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
@@ -49,8 +49,9 @@ class Header extends HTMLElement {
       }
     }
 
-    Object.entries(url).forEach(([item, s]) => {
-      this.querySelector(`#${item} a`).setAttribute('href', s)
+
+    Object.entries(url).forEach(([item, path]) => {
+      this.querySelector(`#${item} a`).setAttribute('href', path)
     })
   }
 }
