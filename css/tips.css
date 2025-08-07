@@ -190,8 +190,6 @@ width: 100%;
     margin-top: 5rem;
     padding: 0 2rem 2rem 2rem;
   }
-
-
   .grid-essential,
   .grid-methods {
     grid-template-columns: 1fr;
@@ -205,5 +203,34 @@ width: 100%;
   #types {
     margin-top: -220px;
   }
+}
+@media (max-width: 430px) {
 
+  .essential-tips,
+  .methods,
+  #types {
+    padding: 0 1.5rem 2rem 1.5rem;
+  }
+
+  #text-hero h1 {
+    font-size: 2.8rem;
+  }
+  #text-hero p {
+    font-size: 1.6rem;
+  }
+  .essential-tips h2,
+  .methods h2 {
+    font-size: 2.6rem;
+  }
+  .card h3 {
+    font-size: 2rem;
+  }
+  .card p {
+    font-size: 1.5rem;
+  }
+
+
+  .card {
+    padding: 1.5rem;
+  }
 }
