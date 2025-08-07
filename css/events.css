@@ -6,6 +6,19 @@ body {
   background-color: var(--color-coffee-white);
 }
 
+.container-events h2 {
+  font-size: clamp(3rem, 10vw, 6rem);
+}
+
+.container-events p {
+  font-size: clamp(2rem, 6vw, 3rem);
+}
+
+.text-title {
+  font-size: clamp(4rem, 10vw, 6em);
+  line-height: 6rem;
+}
+
 .section-events {
   width: 100vw;
   height: 100vh;
@@ -23,6 +36,10 @@ body {
   z-index: 1;
 }
 
+section + section {
+  padding: 4rem;
+}
+
 .item1 {
   align-self: flex-end;
   max-width: 50%;
@@ -35,12 +52,9 @@ body {
   margin-right: 30px;
 }
 
-.section-events h2 {
-  font-size: 6rem;
-}
-
-.section-events p {
-  font-size: 3rem;
+.invert {
+  flex-direction: row-reverse;
+  background-color: aqua;
 }
 
 .makecoffee {
@@ -54,8 +68,8 @@ body {
 }
 
 .musical-night {
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
   width: 100vw;
   height: 67.45vh;
   display: flex;
@@ -67,10 +81,8 @@ body {
 }
 
 .float-img {
-  width: 69.61%;
-  max-width: 662px;
-  height: 90.55%;
-  max-height: 458px;
+  width: 39.61%;
+  height: auto;
   border-radius: 50px;
 }
 
@@ -102,14 +114,6 @@ body {
     margin-bottom: 0;
   }
 
-  .section-events h2 {
-    font-size: 4rem;
-  }
-
-  .section-events p {
-    font-size: 2rem;
-  }
-
   .makecoffee,
   .musical-night {
     flex-direction: column;
@@ -131,6 +135,10 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .float-img {
+    border-radius: 2rem;
+  }
+
   .section-events {
     height: auto;
     padding: 6rem 2rem;
@@ -164,16 +172,6 @@ body {
     margin-bottom: 2rem;
     align-self: center;
   }
-
-  .section-events h2 {
-    font-size: 2.8rem;
-    line-height: 3.4rem;
-  }
-
-  .section-events p {
-    font-size: 1.6rem;
-    line-height: 2.2rem;
-  }
 }
 
 @media screen and (max-width: 480px) {
@@ -183,14 +181,6 @@ body {
 
   .container-events {
     gap: 2rem;
-  }
-
-  .section-events h2 {
-    font-size: 2.2rem;
-  }
-
-  .section-events p {
-    font-size: 1.3rem;
   }
 }
 
