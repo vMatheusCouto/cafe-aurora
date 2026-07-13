@@ -1,6 +1,6 @@
 class Footer extends HTMLElement {
   constructor() {
-    super()
+    super();
   }
 
   connectedCallback() {
@@ -30,7 +30,7 @@ class Footer extends HTMLElement {
             <div class="footer-item footer-links">
               <h3>Links úteis</h3>
               <ul>
-                <li><a href="/cafe-aurora/pages/contacts.html">Entre em contato</a></li>
+                <li><a href="/pages/contacts.html">Entre em contato</a></li>
                 <li><a>Instagram</a></li>
                 <li><a>Facebook</a></li>
                 <li><a>YouTube</a></li>
@@ -50,14 +50,14 @@ class Footer extends HTMLElement {
     `;
 
     if (window.matchMedia("(max-width: 768px)").matches) {
-      this.querySelector('#logo').addEventListener('click', () => {
-        this.querySelectorAll('.hidden-option').forEach((e) => {
-          e.classList.toggle("hidden")
-        })
-        this.querySelector('#header-nav-list').classList.toggle("closed")
+      this.querySelector("#logo").addEventListener("click", () => {
+        this.querySelectorAll(".hidden-option").forEach((e) => {
+          e.classList.toggle("hidden");
+        });
+        this.querySelector("#header-nav-list").classList.toggle("closed");
       });
     }
   }
 }
 
-customElements.define('footer-component', Footer)
+customElements.define("footer-component", Footer);

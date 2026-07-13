@@ -132,7 +132,7 @@ footer {
 }
 
 footer > div:nth-child(1) {
-  background-image: url('https://i.postimg.cc/RVMLD6Hc/background.png');
+  background-image: url('../assets/img/background.webp');
   padding: 8rem;
   display: flex;
   flex-direction: column;

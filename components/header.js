@@ -1,6 +1,6 @@
 class Header extends HTMLElement {
   constructor() {
-    super()
+    super();
   }
 
   connectedCallback() {
@@ -8,7 +8,7 @@ class Header extends HTMLElement {
       <header id="header-nav-list" class="backdrop-blur closed">
         <nav>
           <ul>
-            <li id="logo" class="secondary"><img src="https://i.postimg.cc/fTQ8VSwV/Coffee-Beans.png" width="32px" height="32px">Café Aurora<span class="hidden-option hidden"><br/><div></div></span></li>
+            <li id="logo" class="secondary"><img src="/assets/img/Coffee-Beans.webp" width="32px" height="32px" alt="Logo Café Aurora">Café Aurora<span class="hidden-option hidden"><br/><div></div></span></li>
             <li class="hidden-option hidden">
               <ul id="nav-list">
                 <li id="home" class="variable"><a>Início</a></li>
@@ -26,34 +26,40 @@ class Header extends HTMLElement {
 
     lucide.createIcons();
 
-    const smallDevice = window.matchMedia("(max-width: 768px)").matches
+    const smallDevice = window.matchMedia("(max-width: 768px)").matches;
     if (smallDevice) {
-      this.querySelector('#logo').addEventListener('click', () => {
-        this.querySelectorAll('.hidden-option').forEach((e) => {
-          e.classList.toggle("hidden")
-        })
-        this.querySelector('#header-nav-list').classList.toggle("closed")
+      this.querySelector("#logo").addEventListener("click", () => {
+        this.querySelectorAll(".hidden-option").forEach((e) => {
+          e.classList.toggle("hidden");
+        });
+        this.querySelector("#header-nav-list").classList.toggle("closed");
       });
     }
 
     if (!smallDevice) {
-      window.onscroll = function() {scrollFunction()};
+      window.onscroll = function () {
+        scrollFunction();
+      };
     }
 
     function scrollFunction() {
-      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        document.getElementById("header-nav-list").style.backdropFilter = "blur(7px) brightness(0.8)";
+      if (
+        document.body.scrollTop > 50 ||
+        document.documentElement.scrollTop > 50
+      ) {
+        document.getElementById("header-nav-list").style.backdropFilter =
+          "blur(7px) brightness(0.8)";
         document.getElementById("header-nav-list").style.paddingBottom = "6rem";
       } else {
-        document.getElementById("header-nav-list").style.backdropFilter = "blur(0px)";
+        document.getElementById("header-nav-list").style.backdropFilter =
+          "blur(0px)";
       }
     }
 
-
     Object.entries(url).forEach(([item, path]) => {
-      this.querySelector(`#${item} a`).setAttribute('href', path)
-    })
+      this.querySelector(`#${item} a`).setAttribute("href", path);
+    });
   }
 }
 
-customElements.define('header-component', Header)
+customElements.define("header-component", Header);

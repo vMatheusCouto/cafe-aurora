@@ -6,7 +6,7 @@ class Card extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <div class="card">
-          <img src="https://i.postimg.cc/KjmCxgy4/product-preview.png" alt="">
+          <img src="/assets/img/product-preview.webp" alt="" width="316" height="240" loading="lazy">
           <div>
             <h3 class="text-title text-brown">Café Especial</h3>
             <p class="text-subtitle text-brown">Descrição do café</p>
